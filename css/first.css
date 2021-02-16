@@ -432,6 +432,56 @@
       -webkit-flex-basis: 40%;
           -ms-flex-preferred-size: 40%;
               flex-basis: 40%; }
+      .fth__slider-elem .text .darrio {
+        display: inline-block;
+        color: #be2323;
+        font-weight: 700; }
+      .fth__slider-elem .text .teplowin {
+        display: inline-block;
+        width: 120px;
+        height: 24px;
+        background-image: url("../img/teplowin.png");
+        background-size: auto 100%;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        -webkit-transform: translateY(8px);
+            -ms-transform: translateY(8px);
+                transform: translateY(8px); }
+      .fth__slider-elem .text .elems {
+        margin-top: 40px; }
+        .fth__slider-elem .text .elems .elem {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin-bottom: 20px; }
+          .fth__slider-elem .text .elems .elem .ico {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            background-size: 100% 100%; }
+            .fth__slider-elem .text .elems .elem .ico.speed {
+              background-image: url("../ico/fast-time.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.water {
+              background-image: url("../ico/water-drop-w.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.design {
+              background-image: url("../ico/dove.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.security {
+              background-image: url("../ico/shield.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.esthetic {
+              background-image: url("../ico/flower.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.heavy {
+              background-image: url("../ico/weight.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.function {
+              background-image: url("../ico/cogwheel.svg"); }
+            .fth__slider-elem .text .elems .elem .ico.cost {
+              background-image: url("../ico/purse.svg"); }
+          .fth__slider-elem .text .elems .elem .text-elem {
+            font-size: 16px; }
     .fth__slider-elem .img {
       -webkit-flex-basis: 45%;
           -ms-flex-preferred-size: 45%;
