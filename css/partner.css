@@ -1,9 +1,17 @@
 .main__wrapper {
-  background-image: url("../img/contacts.jpg");
-  height: auto; }
+  background-image: none;
+  height: auto;
+  position: relative; }
+  .main__wrapper .bg-img-p {
+    position: absolute;
+    top: 62px;
+    background-image: url("../img/partner-bg.jpg");
+    background-position: 50% 92%;
+    height: 500px;
+    width: 100%; }
 
 .main__img {
-  margin-top: 300px;
+  margin-top: 500px;
   position: relative; }
   .main__img p {
     max-width: 70%; }
@@ -34,6 +42,9 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .director__triangle.sh {
+    top: -3vw;
+    border-right: 50vw solid rgba(30, 54, 72, 0.5); }
   .director__triangle .director__card {
     width: 200px;
     position: absolute;
@@ -53,7 +64,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  width: 85vw;
+  width: 62vw;
   height: 150px;
   background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.7) calc(100% - 120px), transparent 120px);
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.7) calc(100% - 120px), transparent 120px);

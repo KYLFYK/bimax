@@ -109,3 +109,9 @@
       background-image: url("../ico/file.svg"); }
     .download__block .download:hover {
       background: rgba(255, 255, 255, 0.7); }
+
+.main__img {
+  margin-bottom: 200px;
+  max-height: 280px;
+  text-align: center;
+  background: rgba(30, 54, 72, 0.5); }

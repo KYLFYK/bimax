@@ -104,17 +104,39 @@
       .form__block .form__left label input, .form__block .form__right label input {
         margin-top: 10px;
         height: 36px;
-        padding-left: 10px; }
+        padding-left: 10px;
+        outline: none; }
       .form__block .form__left label textarea, .form__block .form__right label textarea {
         margin-top: 10px;
-        height: 100%;
-        padding: 20px; }
+        height: 214px;
+        padding: 20px;
+        resize: none;
+        outline: none; }
   .form__block .form__right label {
     position: relative;
     height: 100%; }
   .form__block .form__right .file {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: black;
-    cursor: pointer; }
+    opacity: 0; }
+  .form__block .form__right .file-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    opacity: 1;
+    height: auto;
+    padding-left: 30px;
+    color: #de5454; }
+    .form__block .form__right .file-label::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      background: url("../ico/paperclip.svg");
+      background-size: 100% 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
