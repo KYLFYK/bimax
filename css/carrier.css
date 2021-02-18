@@ -78,7 +78,8 @@
 .form__block {
   background-color: rgba(61, 102, 132, 0.5);
   padding: 40px;
-  margin: 20px; }
+  margin: 20px;
+  margin-top: auto; }
   .form__block .title {
     font-size: 1.5625rem;
     margin-bottom: 20px; }
@@ -99,19 +100,20 @@
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-bottom: 20px;
-      width: 300px; }
+      margin-bottom: 20px; }
       .form__block .form__left label input, .form__block .form__right label input {
         margin-top: 10px;
         height: 36px;
         padding-left: 10px;
-        outline: none; }
+        outline: none;
+        width: 300px; }
       .form__block .form__left label textarea, .form__block .form__right label textarea {
         margin-top: 10px;
         height: 214px;
         padding: 20px;
         resize: none;
-        outline: none; }
+        outline: none;
+        width: 600px; }
   .form__block .form__right label {
     position: relative;
     height: 100%; }
@@ -120,13 +122,17 @@
     opacity: 0; }
   .form__block .form__right .file-label {
     position: absolute;
-    left: 20px;
+    right: 50px;
     bottom: 20px;
     cursor: pointer;
     opacity: 1;
     height: auto;
     padding-left: 30px;
-    color: #de5454; }
+    color: #de5454;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
     .form__block .form__right .file-label::after {
       position: absolute;
       content: '';

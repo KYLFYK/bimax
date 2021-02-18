@@ -95,7 +95,7 @@ $('.fth__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 7000,
     arrows: true,
     dots: false,
     prevArrow: $('.arr-left'),
@@ -107,10 +107,38 @@ $('.fth__bg-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 7000,
     arrows: true,
     dots: false,
     prevArrow: $('.arr-left'),
     nextArrow: $('.arr-right'),
     asNavFor: '.fth__slider'
 });
+
+let currentSlideTh = 0
+let prevSlider = 1
+
+const nextSlider = function(elem) {
+    if (currentSlideTh === 0) {
+        prevSlider = 1
+    } else {
+        prevSlider = currentSlideTh - 1
+    }
+
+    if (currentSlideTh === 1) {
+        elem.querySelectorAll('img')[prevSlider].classList.remove('active')
+        elem.querySelectorAll('img')[currentSlideTh].classList.add('active')
+        currentSlideTh = 0
+    } else {
+        elem.querySelectorAll('img')[prevSlider].classList.remove('active')
+        elem.querySelectorAll('img')[currentSlideTh].classList.add('active')
+        currentSlideTh++
+    }
+}
+
+const thdSlide = document.querySelectorAll('.third-elem')
+
+thdSlide.forEach(element => {
+    let curS = element.querySelector('.img')
+    setInterval(function(){nextSlider(curS)}, 4000)
+})

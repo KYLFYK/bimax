@@ -280,18 +280,31 @@
       background-position: 50% 50%;
       margin-bottom: 10px; }
       .produect__keys .key .ico.eco {
-        background-image: url("../ico/eco.png"); }
+        background-image: url("../ico/eco-g.svg");
+        background-size: 80% 80%; }
       .produect__keys .key .ico.tep {
-        background-image: url("../ico/hot.svg");
+        background-image: url("../ico/temp-o.svg");
         background-size: 80% 80%; }
       .produect__keys .key .ico.noi {
-        background-image: url("../ico/noise.svg");
+        background-image: url("../ico/voice-n.svg");
         background-size: 80% 80%; }
       .produect__keys .key .ico.exc {
-        background-image: url("../ico/vip.svg");
+        background-image: url("../ico/window-o.svg");
         background-size: 80% 80%; }
       .produect__keys .key .ico.gua {
-        background-image: url("../ico/guarantee.svg");
+        background-image: url("../ico/secure-b-o.svg");
+        background-size: 80% 80%; }
+      .produect__keys .key .ico.sec {
+        background-image: url("../ico/lock.svg");
+        background-size: 80% 80%; }
+      .produect__keys .key .ico.cold {
+        background-image: url("../ico/cold.svg");
+        background-size: 80% 80%; }
+      .produect__keys .key .ico.color {
+        background-image: url("../ico/colors.svg");
+        background-size: 80% 80%; }
+      .produect__keys .key .ico.sun {
+        background-image: url("../ico/sun.svg");
         background-size: 80% 80%; }
     .produect__keys .key .text {
       font-size: 14px; }
