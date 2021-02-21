@@ -9,10 +9,10 @@
 
 .product__header {
   background: rgba(255, 255, 255, 0.6);
-  max-width: 900px;
-  width: 100%;
   margin: 20px auto;
-  border-radius: 2px; }
+  border-radius: 2px;
+  padding-left: 20px;
+  padding-right: 20px; }
   .product__header ul {
     list-style: none;
     display: -webkit-box;
@@ -49,7 +49,7 @@
 
 .product__qualities {
   margin-top: 60px;
-  max-width: 56%;
+  max-width: 52%;
   padding: 20px;
   margin-left: 60px;
   background-color: rgba(255, 254, 243, 0.6);
@@ -202,6 +202,7 @@
     -webkit-flex-basis: 30%;
         -ms-flex-preferred-size: 30%;
             flex-basis: 30%;
+    height: 400px;
     margin-left: 20px;
     margin-right: 20px;
     display: -webkit-box;
@@ -275,37 +276,28 @@
     .produect__keys .key .ico {
       width: 80px;
       height: 80px;
-      background-size: 100% 100%;
+      background-size: 60% 60%;
       background-repeat: no-repeat;
       background-position: 50% 50%;
       margin-bottom: 10px; }
       .produect__keys .key .ico.eco {
-        background-image: url("../ico/eco-g.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/eco-g.svg"); }
       .produect__keys .key .ico.tep {
-        background-image: url("../ico/temp-o.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/temp-o.svg"); }
       .produect__keys .key .ico.noi {
-        background-image: url("../ico/voice-n.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/voice-n.svg"); }
       .produect__keys .key .ico.exc {
-        background-image: url("../ico/window-o.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/window-o.svg"); }
       .produect__keys .key .ico.gua {
-        background-image: url("../ico/secure-b-o.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/secure-b-o.svg"); }
       .produect__keys .key .ico.sec {
-        background-image: url("../ico/lock.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/lock.svg"); }
       .produect__keys .key .ico.cold {
-        background-image: url("../ico/cold.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/cold.svg"); }
       .produect__keys .key .ico.color {
-        background-image: url("../ico/colors.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/colors.svg"); }
       .produect__keys .key .ico.sun {
-        background-image: url("../ico/sun.svg");
-        background-size: 80% 80%; }
+        background-image: url("../ico/sun.svg"); }
     .produect__keys .key .text {
       font-size: 14px; }
 
@@ -343,6 +335,7 @@
     .pack .img img {
       max-width: 400px; }
   .pack .about {
+    width: 50%;
     margin-left: 40px; }
     .pack .about .title {
       font-weight: 900;

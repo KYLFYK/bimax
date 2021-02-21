@@ -5,6 +5,14 @@
 .main__img {
   margin-top: 300px; }
 
+.footer-left__list {
+  padding-left: 80px;
+  padding-right: 80px; }
+
+.footer-left__time__block {
+  padding-left: 80px;
+  padding-right: 80px; }
+
 .contacts__block {
   display: -webkit-box;
   display: -webkit-flex;
