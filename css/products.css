@@ -272,7 +272,9 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    width: 150px;
+    text-align: center; }
     .produect__keys .key .ico {
       width: 80px;
       height: 80px;
@@ -370,6 +372,8 @@
     margin: 20px;
     -webkit-transition: border-color .3s ease-out;
     -o-transition: border-color .3s ease-out;
-    transition: border-color .3s ease-out; }
+    transition: border-color .3s ease-out;
+    width: 160px;
+    text-align: center; }
     .btns-pr .pr-btn.active {
       border-color: #e75a59; }
