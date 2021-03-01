@@ -16,7 +16,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: #1e3648;
   text-decoration: none;
   margin-left: 30px; }
@@ -486,9 +486,9 @@ nav {
     .fth__slider-elem .text {
       font-size: 1.375rem;
       color: white;
-      -webkit-flex-basis: 40%;
-          -ms-flex-preferred-size: 40%;
-              flex-basis: 40%; }
+      -webkit-flex-basis: 35%;
+          -ms-flex-preferred-size: 35%;
+              flex-basis: 35%; }
       .fth__slider-elem .text .darrio {
         display: inline-block;
         color: #be2323;
@@ -540,9 +540,9 @@ nav {
           .fth__slider-elem .text .elems .elem .text-elem {
             font-size: 16px; }
     .fth__slider-elem .img {
-      -webkit-flex-basis: 45%;
-          -ms-flex-preferred-size: 45%;
-              flex-basis: 45%;
+      -webkit-flex-basis: 42%;
+          -ms-flex-preferred-size: 42%;
+              flex-basis: 42%;
       height: 450px;
       overflow: hidden;
       text-align: -webkit-center;
