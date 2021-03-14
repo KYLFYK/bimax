@@ -1,13 +1,13 @@
 .main__wrapper {
   background-image: none;
-  height: auto;
-  position: relative; }
+  height: auto; }
   .main__wrapper .bg-img-p {
     position: absolute;
+    z-index: -1;
     top: 62px;
     background-image: url("../img/partner-bg.jpg");
     background-position: 50% 92%;
-    height: 500px;
+    height: 100vh;
     width: 100%; }
 
 .main__img {
@@ -23,6 +23,9 @@
     background: #1e3648;
     padding: 20px;
     max-width: 40%; }
+    @media (max-width: 1000px) {
+      .skills__block .skill {
+        max-width: 100%; } }
     .skills__block .skill:not(:last-of-type) {
       margin-bottom: 20px; }
 
@@ -42,13 +45,36 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 1000px) {
+    .director__triangle {
+      border: none;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
   .director__triangle.sh {
     top: -3vw;
     border-right: 50vw solid rgba(30, 54, 72, 0.5); }
+    @media (max-width: 1000px) {
+      .director__triangle.sh {
+        display: none; } }
   .director__triangle .director__card {
     width: 200px;
     position: absolute;
     right: -40vw; }
+    @media (max-width: 1200px) {
+      .director__triangle .director__card {
+        right: -45vw; } }
+    @media (max-width: 1000px) {
+      .director__triangle .director__card {
+        position: relative;
+        right: 0;
+        margin-bottom: 20px; } }
     .director__triangle .director__card .img {
       width: 200px;
       height: 300px;
@@ -64,11 +90,21 @@
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
-  width: 62vw;
+  width: 100vw;
   height: 150px;
-  background: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.7) calc(100% - 120px), transparent 120px);
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.7) calc(100% - 120px), transparent 120px);
+  background-color: rgba(255, 255, 255, 0.7);
   color: #1e3648; }
+  @media (max-width: 1000px) {
+    .elements__block {
+      width: auto;
+      height: auto;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      gap: 1rem; } }
   .elements__block .ico {
     height: 80px;
     width: 100px;
@@ -107,6 +143,8 @@
     .elements__block .elem .elem-text {
       font-size: 14px;
       text-align: center; }
+      .elements__block .elem .elem-text p {
+        width: 100%; }
 
 .download {
   color: black;
@@ -135,6 +173,10 @@
   transition: background-color .3s ease-out; }
   .download:first-of-type {
     margin-right: 40px; }
+    @media (max-width: 800px) {
+      .download:first-of-type {
+        margin-right: 0;
+        width: auto; } }
   .download .ico {
     width: 24px;
     height: 24px;

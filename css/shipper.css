@@ -9,6 +9,9 @@
 .form__wrapper {
   height: auto;
   min-height: 100vh; }
+  @media (max-width: 700px) {
+    .form__wrapper .text {
+      padding: 20px; } }
 
 .key-title {
   text-align: center;
@@ -113,11 +116,16 @@
 .main__img {
   margin-bottom: 10vh;
   max-height: 450px;
-  max-width: 55vw;
+  width: 55vw;
   margin-left: 60px;
   background: rgba(30, 54, 72, 0.5);
   padding-left: 40px;
   padding-right: 40px;
   font-size: 20px; }
+  @media (max-width: 800px) {
+    .main__img {
+      width: 80vw;
+      font-size: 13px;
+      margin-left: 30px; } }
   .main__img .title {
     text-align: left !important; }

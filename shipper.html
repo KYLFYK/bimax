@@ -53,6 +53,7 @@
         </a>
       </li>
     </ul>
+    <div class="menu-burger-r"><div class="line"></div></div>
   </div>
   <div class="main__img">
     <div class="text">
@@ -68,13 +69,13 @@
 
 <div class="form__wrapper">
   <div class="text">
-    <p data-aos="fade-left">
+    <p data-aos="fade-up">
       Большой опыт работы и налаженные партнерские отношения с крупнейшими поставщиками комплектующих позволяют нам изготавливать оконные конструкции различной конфигурации и комплектации в сжатые сроки предлагая  их по выгодной цене.
     </p>
-    <p data-aos="fade-left">
+    <p data-aos="fade-up">
       Для наших партнеров мы регулярно проводим обучающие семинары и конференции, благодаря им дилеры приобретают знания о продукции, грамотном проведении продаж, повышении лояльности клиентов и новинках компании.
     </p>
-    <p data-aos="fade-left">
+    <p data-aos="fade-up">
       Для своих партнеров мы предоставляем выгодные условия сотрудничества, привлекательные цены и информационную поддержку – все это позволяет наладить действительно надежный и рентабельный бизнес!
     </p>
     <div class="key-title" data-aos="fade-up">
@@ -247,6 +248,14 @@
     </form>
   </div>
 </div>
+
+<script src="js/menuBurger.js"></script>
+<script>
+  const menuBurger2 = document.querySelector('.menu-burger-r')
+  const nav2 = document.querySelector('.main__header ul')
+
+  burger(menuBurger2, nav2)
+</script>
 <script src="js/aos.js"></script>
 <script>
   AOS.init();

@@ -8,6 +8,11 @@
   border-radius: 4px;
   max-width: 70%;
   background-color: rgba(255, 255, 255, 0.6); }
+  @media (max-width: 1000px) {
+    .acces-text {
+      max-width: 100%;
+      margin: 0 10px;
+      padding: 30px; } }
   .acces-text .title {
     font-size: 28px;
     font-weight: 700;
@@ -22,6 +27,16 @@
     display: -ms-flexbox;
     display: flex;
     margin-top: 50px; }
+    @media (max-width: 1000px) {
+      .acces-text .qualities {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        gap: 1rem;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
     .acces-text .qualities .item {
       display: -webkit-box;
       display: -webkit-flex;

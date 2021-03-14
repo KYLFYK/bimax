@@ -37,7 +37,7 @@
       </li>
       <li class="header__nav__list-item">
 
-<a href="shipper.html">Дилерам</a>
+      <a href="shipper.html">Дилерам</a>
       </li>
       <li class="header__nav__list-item">
         <a href="accessories.html">Комплектующие</a>
@@ -54,6 +54,7 @@
         </a>
       </li>
     </ul>
+    <div class="menu-burger-r"><div class="line"></div></div>
   </div>
   <div class="product__header" data-aos="fade-up">
     <ul>
@@ -146,7 +147,7 @@
 </div>
 
 <div class="about-pr__block">
-  <div class="title" data-aos="fade-left">
+  <div class="title" data-aos="fade-up">
     Teplowin
   </div>
   <div class="text" data-aos="fade-up">
@@ -158,13 +159,13 @@
     TEPLOWIN ESTETIC
   </div>
   <div class="produect__content">
-    <div class="text" data-aos="fade-left">
+    <div class="text" data-aos="fade-up">
       Улучшенное энергосбережение в сочетании с дизайнерским внешним видом позволяют отнести этот продукт к классу люкс. Конструкции TEPLOWIN ESTETIC обладают высокой теплоизоляцией и шумозащитой, обеспечивая комфорт при любых внешних условиях. Подходят для реализации самых смелых архитектурных решений.
     </div>
     <div class="img" data-aos="fade-right">
       <img src="img/teplowin.jpg" alt="">
     </div>
-    <div data-aos="fade-left" class="params">
+    <div data-aos="fade-up" class="params">
       <div class="param-elem">
         <div class="param">
           Количество камер
@@ -482,6 +483,13 @@
   </div>
 </div>
 
+<script src="js/menuBurger.js"></script>
+<script>
+  const menuBurger2 = document.querySelector('.menu-burger-r')
+  const nav2 = document.querySelector('.main__header ul')
+
+  burger(menuBurger2, nav2)
+</script>
 <script src="js/aos.js"></script>
 <script src="js/jqr.js"></script>
 <script src="js/slm.js"></script>

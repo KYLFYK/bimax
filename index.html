@@ -45,6 +45,7 @@
               <span class="ico"></span>
               <span>+7 (495) 587 44-99</span>
             </a>
+            <div class="menu-burger"><div class="line"></div></div>
         </nav>
     </header>
 
@@ -180,7 +181,7 @@
                         </div>
                     </div>
                     <div class="about-elem">
-                        <video autoplay="autoplay" controls="controls" src="video.mp4"></video>
+                        <video controls="controls" src="video.mp4"></video>
                     </div>
                 </div>
             </div>
@@ -330,10 +331,10 @@
 
     <div class="cert__wrapper">
         <div class="cert__container">
-            <div class="certificate" data-aos="fade-right">
+            <div class="certificate" data-aos="fade-up">
                 <iframe src="https://drive.google.com/file/d/1ndtPPzfOI14ygNiat_CF0heeUqxGk3HZ/preview" width="640" height="480"></iframe>
             </div>
-            <div class="certificate" data-aos="fade-left">
+            <div class="certificate" data-aos="fadeup">
                 <iframe src="https://drive.google.com/file/d/1qLjZbHj-Ak-YKYOawdZ8mJ13H2YeTSoB/preview"></iframe>
             </div>
         </div>
@@ -542,6 +543,13 @@
         </div>
     </footer>
 
+    <script src="js/menuBurger.js"></script>
+    <script>
+        const menuBurger1 = document.querySelector('.menu-burger')
+        const nav1 = document.querySelector('.header__nav__list')
+
+        burger(menuBurger1, nav1)
+    </script>
     <script src="js/aos.js"></script>
     <script src="js/jqr.js"></script>
     <script src="js/slm.js"></script>

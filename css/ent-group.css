@@ -16,20 +16,45 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #fff8eb; }
+  background-color: #fff8eb;
+  position: relative;
+  z-index: -1; }
+  @media (max-width: 900px) {
+    .main-text-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 1rem; } }
   .main-text-block .text {
     -webkit-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
-    padding-left: 40px; }
+    padding: 0 40px; }
+    @media (max-width: 900px) {
+      .main-text-block .text {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+        padding-bottom: 20px; } }
   .main-text-block .img {
     -webkit-flex-basis: 45%;
         -ms-flex-preferred-size: 45%;
             flex-basis: 45%;
     min-height: 300px;
-    max-height: 300px;
     overflow: hidden;
     position: relative; }
+    @media (max-width: 900px) {
+      .main-text-block .img {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+        min-height: 100px; } }
     .main-text-block .img img {
       height: 400px;
       position: absolute;
@@ -39,6 +64,16 @@
           -ms-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       min-height: 100%; }
+      @media (max-width: 900px) {
+        .main-text-block .img img {
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: 0;
+          left: 0;
+          -webkit-transform: none;
+              -ms-transform: none;
+                  transform: none; } }
 
 .about__wrapper {
   margin-top: 40px; }
@@ -48,6 +83,9 @@
     margin: 30px;
     padding: 40px;
     background-color: rgba(255, 248, 235, 0.5); }
+    @media (max-width: 600px) {
+      .about__wrapper .about__block {
+        margin: 10px; } }
 
 .about__images {
   margin: 40px;
@@ -58,11 +96,20 @@
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+  @media (max-width: 1000px) {
+    .about__images {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      gap: 1rem; } }
   .about__images .img {
     position: relative;
     width: 280px;
     height: 280px;
     overflow: hidden; }
+    @media (max-width: 1000px) {
+      .about__images .img {
+        margin: 0 auto; } }
     .about__images .img img {
       position: absolute;
       top: 50%;
@@ -83,27 +130,37 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 900px) {
+    .dop__wrapper .dop__block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .dop__wrapper .dop__block .img {
-    width: 300px;
-    min-width: 300px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
+    width: 30%;
+    height: auto;
     margin-left: 50px;
     margin-right: 20px; }
+    @media (max-width: 900px) {
+      .dop__wrapper .dop__block .img {
+        margin: 0;
+        width: 100%; } }
     .dop__wrapper .dop__block .img img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-height: 300px;
-      height: 100%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); }
+      width: 100%;
+      height: auto;
+      -o-object-fit: cover;
+         object-fit: cover;
+      min-width: 300px; }
   .dop__wrapper .dop__block .text {
+    width: 70%;
     background-color: rgba(255, 248, 235, 0.5);
     padding: 20px;
     margin-right: 50px; }
+    @media (max-width: 900px) {
+      .dop__wrapper .dop__block .text {
+        margin-right: 0;
+        width: 100%; } }
 
 .footer__wrapper {
   padding: 0;

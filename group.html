@@ -55,6 +55,7 @@
         </a>
       </li>
     </ul>
+    <div class="menu-burger-r"><div class="line"></div></div>
   </div>
   <div class="product__header" data-aos="fade-up">
     <ul>
@@ -76,7 +77,7 @@
     </ul>
   </div>
   <div class="main-text-block">
-    <div class="text" data-aos="fade-left">
+    <div class="text" data-aos="fade-up">
       Входная группа обеспечивает защиту от сквозняков, холода, проникновения осадков. Она создает буферную зону и снижает расходы на обогрев.
       Это  архитектурная конструкция для оформления, утепления входа в здание, которая  должна отвечать ряду требований:
       быть эстетичной, дополняя фасадное оформление;
@@ -118,7 +119,7 @@
 </div>
 
 <div class="dop__wrapper">
-  <b class="title" data-aos="fade-left">
+  <b class="title" data-aos="fade-up">
     Предлагаем к заказу из алюминия и ПВХ Параллельно-сдвижные двери PSK
   </b>
   <div class="dop__block">
@@ -136,11 +137,18 @@
   <div class="img" data-aos="fade-right">
     <img src="img/colors.jpeg" alt="">
   </div>
-  <div class="text" data-aos="fade-down">
+  <div class="text">
     Все изделия мы можем выполнить в любом цвете по шкале RAL
   </div>
 </div>
 
+<script src="js/menuBurger.js"></script>
+<script>
+  const menuBurger2 = document.querySelector('.menu-burger-r')
+  const nav2 = document.querySelector('.main__header ul')
+
+  burger(menuBurger2, nav2)
+</script>
 <script src="js/aos.js"></script>
 <script>
   AOS.init();
