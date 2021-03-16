@@ -326,12 +326,19 @@ nav {
       background-color: white; }
     .second__container .stat-elem:not(:last-of-type) {
       margin-right: 60px; }
+      @media (max-width: 700px) {
+        .second__container .stat-elem:not(:last-of-type) {
+          margin-right: 0;
+          margin-bottom: 20px; } }
     .second__container .stat-elem .count {
       font-size: 2.125rem;
       display: inline-block;
       line-height: 50px; }
     .second__container .stat-elem .text {
       margin-top: 6px; }
+    @media (max-width: 700px) {
+      .second__container .stat-elem {
+        width: 90%; } }
   .second__container .about__block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -677,19 +684,16 @@ nav {
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: horizontal;
+            -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-            -webkit-flex-direction: row;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            -webkit-box-pack: center;
-            -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: start;
+            -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
             gap: 2rem;
-            -webkit-flex-wrap: wrap;
-                -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
             margin: 40px 0 0 0; } }
         .fth__slider-elem .text .elems .elem {
           display: -webkit-box;
